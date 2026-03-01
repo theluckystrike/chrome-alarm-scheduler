@@ -1,0 +1,39 @@
+{
+    "name": "chrome-alarm-scheduler",
+    "version": "0.1.0",
+    "description": "Advanced Chrome Alarms API wrapper — cron-like scheduling, named alarms, recurring tasks, alarm groups, and persistence for MV3 extensions.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "alarms",
+        "scheduler",
+        "cron",
+        "timer",
+        "recurring",
+        "manifest-v3",
+        "browser-extension",
+        "background-tasks",
+        "periodic"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-alarm-scheduler.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
